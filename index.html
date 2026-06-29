@@ -12,6 +12,51 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 
 <style>
 
+ /* ===== BUTTON ROW ===== */
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+/* ===== BASE BUTTON STYLE ===== */
+.btn {
+    flex: 1;
+    text-align: center;
+    padding: 15px 10px;
+    border-radius: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+    color: white;
+}
+
+/* ===== COLORS ===== */
+.call {
+    background: #1f7a1f;
+}
+
+.text {
+    background: #0066cc;
+}
+
+.email {
+    background: #444;
+}
+
+.fb {
+    background: #1877f2;
+}
+
+/* ===== HOVER EFFECT ===== */
+.btn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+    
 /* ===== HEADER (STEP 1) ===== */
 .site-header {
     width: 100%;
@@ -129,31 +174,18 @@ a:hover{
 
 <div class="info">
 
-<p>
-<a href="https://www.facebook.com/share/1DVJFEeLbL/?mibextid=wwXIfr" target="_blank">
-<i class="fab fa-facebook-square facebook"></i>
-Visit My Facebook
-</a>
-</p>
+<div class="button-row">
 
-<p>
-<a href="tel:+12544502783">
-📞 Call Me
-</a>
-</p>
+    <a href="tel:+12544502783" class="btn call">Call</a>
 
-<p>
-<a href="sms:+12544502783">
-💬 Text Me
-</a>
-</p>
+    <a href="sms:+12544502783" class="btn text">Text</a>
 
-<p>
-<a href="mailto:sdavila@killeenauto.com">
-✉️ Email Me
-</a>
-</p>
+    <a href="mailto:sdavila@killeenauto.com" class="btn email">Email</a>
 
+    <a href="https://www.facebook.com/share/1DVJFEeLbL/?mibextid=wwXIfr" target="_blank" class="btn fb">Facebook</a>
+
+</div>
+    
 <p>
 📍 3221 E Central Texas Expressway<br>
 Killeen, TX 76543
