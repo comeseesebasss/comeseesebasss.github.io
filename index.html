@@ -31,16 +31,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 }
 
 /* ===== BASE BUTTON STYLE ===== */
-.btn {
-    flex: 1;
-    text-align: center;
-    padding: 15px 10px;
-    border-radius: 12px;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 18px;
-    transition: 0.3s;
-    color: white;
+.btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:22px;
 }
 
 /* ===== COLORS ===== */
@@ -118,7 +113,7 @@ h3{
 
 .hashtag{
     margin-top:30px;
-    font-size:18px;
+    font-size:16px;
     color:rgba(255,255,255,.8);
     font-style:italic;
     letter-spacing:1px;
@@ -183,6 +178,13 @@ a:hover{
         flex: 1 1 100%;
     }
 }
+ @media (max-width: 600px){
+    .btn{
+        flex:1 1 100%;
+        font-size:26px;
+        padding:18px;
+    }
+}
  
 </style>
 
@@ -200,13 +202,21 @@ a:hover{
 
 <div class="button-row">
 
-    <a href="tel:+12544502783" class="btn call">Call</a>
+   <a href="tel:+12544502783" class="btn call">
+    <i class="fa-solid fa-phone"></i>
+</a>
 
-    <a href="sms:+12544502783" class="btn text">Text</a>
+<a href="sms:+12544502783" class="btn text">
+    <i class="fa-solid fa-comment-sms"></i>
+</a>
 
-    <a href="mailto:sdavila@killeenauto.com" class="btn email">Email</a>
+<a href="mailto:sdavila@killeenauto.com" class="btn email">
+    <i class="fa-solid fa-envelope"></i>
+</a>
 
-    <a href="https://www.facebook.com/share/1DVJFEeLbL/?mibextid=wwXIfr" target="_blank" class="btn fb">Facebook</a>
+<a href="https://www.facebook.com/share/1DVJFEeLbL/?mibextid=wwXIfr" target="_blank" class="btn fb">
+    <i class="fa-brands fa-facebook-f"></i>
+</a>
 
 </div>
     
