@@ -35,12 +35,15 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     display:flex;
     align-items:center;
     justify-content:center;
-    font-size:24px;
-    width:70px;
-    height:70px;
+    width:50px;   /* ~30% smaller than 70px */
+    height:50px;
     border-radius:14px;
     background:#b8b8b8;
     transition:0.3s;
+}
+
+ .btn i{
+    font-size:36px;
 }
 
 /* ===== COLORS ===== */
@@ -174,10 +177,13 @@ a:hover{
 
 @media (max-width: 600px){
 
-    .button-row{
-        justify-content:center;
-        gap:12px;
-    }
+   .button-row{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-top:30px;
+    flex-wrap:nowrap;   /* IMPORTANT */
+}
 
     .btn{
         width:60px;
@@ -186,6 +192,22 @@ a:hover{
         border-radius:14px;
     }
 }
+
+ @media (max-width: 600px){
+    .btn{
+        width:45px;
+        height:45px;
+    }
+
+    .btn i{
+        font-size:28px;
+    }
+
+    .button-row{
+        gap:10px;
+    }
+}
+ 
      .btn i{
     line-height:1;
 }
