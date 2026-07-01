@@ -34,15 +34,15 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     display:flex;
     align-items:center;
     justify-content:center;
-    width:50px;
-    height:50px;
+    width:42px;   
+    height:42px;
     border-radius:12px;
     background:#5a5a5a;
     transition:0.3s;
 }
 
  .btn i{
-    font-size:26px;
+    font-size:34px;
     line-height:1;
 }
 
@@ -175,21 +175,21 @@ a:hover{
 }
 
 @media (max-width: 600px){
-
     .button-row{
         justify-content:center;
-        gap:8px;        
+        gap:8px;
+        flex-wrap:nowrap;
     }
 
     .btn{
-        width:34px;   /* ~30% smaller than 50px */
-        height:34px;
+        width:36px;   /* 15% smaller target */
+        height:36px;
         border-radius:10px;
-        background:#5a5a5a; /* darker gray */
+        background:#5a5a5a;
     }
 
     .btn i{
-        font-size:22px; /* keeps icons strong */
+        font-size:28px; /* BIGGER icons */
     }
 }
  
