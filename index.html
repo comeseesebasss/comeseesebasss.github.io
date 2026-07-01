@@ -35,10 +35,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     display:flex;
     align-items:center;
     justify-content:center;
-    width:50px;   /* ~30% smaller than 70px */
+    width:50px;
     height:50px;
-    border-radius:14px;
-    background:#b8b8b8;
+    border-radius:12px;
+    background:#5a5a5a;
     transition:0.3s;
 }
 
@@ -176,47 +176,35 @@ a:hover{
 }
 
 @media (max-width: 600px){
-    h1{
-        font-size:44px;
-        line-height:1.1;
-    }
-}
- 
- @media (max-width: 600px){
 
-   .button-row{
-    display:flex;
-    justify-content:center;
-    gap:15px;
-    margin-top:30px;
-    flex-wrap:nowrap;   /* IMPORTANT */
-}
+    .button-row{
+        justify-content:center;
+        gap:8px;
+        flex-wrap:nowrap;
+    }
 
     .btn{
-        width:60px;
-        height:60px;
-        font-size:22px;
-        border-radius:14px;
-    }
-}
-
- @media (max-width: 600px){
-    .btn{
-        width:45px;
-        height:45px;
+        width:34px;   /* ~30% smaller than 50px */
+        height:34px;
+        border-radius:10px;
+        background:#5a5a5a; /* darker gray */
     }
 
     .btn i{
-        font-size:28px;
-    }
-
-    .button-row{
-        gap:10px;
+        font-size:22px; /* keeps icons strong */
     }
 }
  
      .btn i{
     line-height:1;
+}
+
+ @media (max-width: 600px){
+    h1{
+        font-size:52px;
+        line-height:1;
+        white-space:nowrap;
+    }
 }
  
 </style>
