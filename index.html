@@ -1,290 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
- <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>Sebastian Davila</title>
+  <title>Sebastian Davila</title>
 
-<!-- Font Awesome -->
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <!-- ===== FONTS ===== -->
+  <link rel="preconnect" href="https://urldefense.com/v3/__https://fonts.googleapis.com__;!!BrVsjWms-IJ2!boVXmo7LiuSbe4UPRYItJ5fuAfCMNQZhtcqJzEPEO6M5xR17lsAzfDrt6JKNQyMRQ1MBvCnEqfVEmlQrTJatQtk8TA$ ">
+  <link rel="preconnect" href="https://urldefense.com/v3/__https://fonts.gstatic.com__;!!BrVsjWms-IJ2!boVXmo7LiuSbe4UPRYItJ5fuAfCMNQZhtcqJzEPEO6M5xR17lsAzfDrt6JKNQyMRQ1MBvCnEqfVEmlQrTJYGA415LA$ " crossorigin>
+  <link
+    href="https://urldefense.com/v3/__https://fonts.googleapis.com/css2?family=Great*Vibes&display=swap__;Kw!!BrVsjWms-IJ2!boVXmo7LiuSbe4UPRYItJ5fuAfCMNQZhtcqJzEPEO6M5xR17lsAzfDrt6JKNQyMRQ1MBvCnEqfVEmlQrTJZyzU6peA$ "
+    rel="stylesheet">
+  <link
+    href="https://urldefense.com/v3/__https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap__;!!BrVsjWms-IJ2!boVXmo7LiuSbe4UPRYItJ5fuAfCMNQZhtcqJzEPEO6M5xR17lsAzfDrt6JKNQyMRQ1MBvCnEqfVEmlQrTJbtuRnXKg$ "
+    rel="stylesheet">
 
-<!-- Google Font -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- ===== ICONS ===== -->
+  <link
+    rel="stylesheet"
+    href="https://urldefense.com/v3/__https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css__;!!BrVsjWms-IJ2!boVXmo7LiuSbe4UPRYItJ5fuAfCMNQZhtcqJzEPEO6M5xR17lsAzfDrt6JKNQyMRQ1MBvCnEqfVEmlQrTJat0LrFCQ$ ">
 
-
- 
-<style>
-
- :root {
-     
-      --accent: #1F2F57; /* VW deep blue */
-      --gold: #D5A74D;
-      --silver: #C6C6C6;
-      --med-silver: #D5D5D5;
-      --bright-silver: #D8D8D8;
-      --light-silver: #CECECE;
-      --gray-silver: #B0B0B0;
-      --gray: #999999;
-      --gray-med: #A0A0A0;
-      --manila: #E7DCB6;
-      --white: #F5F5F5;
-      --vw-blue: #1F2F57;
-      --vw-light-blue: #6091C3;
-      --bright-blue: #64A0F2;
-      --vw-white: #FDFAF9;
-      --vw-gray: #A8A8A8;      
+  <style>
+    /* = PAGE VARIABLES = */
+    :root {
+      --bg-image: url("SDGTISnowBlur-2.png");
+      --page-overlay: rgba(0,0,0,.05);
+      --card-bg: rgba(31,47,87,.85);
+      --button-bg: #5a5a5a;
+      --button-hover-bg: #d8e8ff;
+      --call-color: #25d366;
+      --text-color: #4aa3ff;
+      --email-color: #ffffff;
+      --facebook-color: #1877f2;
     }
 
- /* ===== BUTTON ROW ===== */
-.button-row{
-    display:flex;
-    justify-content:center;
-    gap:10px;
-    margin-top:30px;
-    flex-wrap:nowrap;
-}
-
-/* ===== BASE BUTTON STYLE ===== */
-.btn{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    width:42px;   
-    height:42px;
-    border-radius:12px;
-    background:#5a5a5a;
-    transition:0.3s;
-}
-
- .btn i{
-    font-size:34px;
-    line-height:1;
-}
-
-/* ===== COLORS ===== */
-.call i{
-    color:#25d366;
-}
-
-.text i{
-    color:#4aa3ff;
-}
-
-.email i{
-    color:#ffffff;
-}
-
-.fb i{
-    color:#1877f2;
-}
-
-/* ===== HOVER EFFECT ===== */
-.btn:hover {
-    transform: scale(1.05);
-    opacity: 0.9;
-}
-    
-
-
-/* ===== BODY ===== */
-body{
-    margin:0;
-    padding:0;
-    font-family:'Poppins', sans-serif;
-    background-image:url("SDGTISnowBlur-2.png");
-    background-size:cover;
-    background-position:center;
-    background-attachment:fixed;
-    color:white;
-}
-
-/* ===== OVERLAY ===== */
-.overlay{
-    min-height:100vh;
-    background:rgba(0,0,0,.05);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
-/* ===== CONTENT BOX ===== */
-.content{
-    width:90%;
-    max-width:700px;
-    background:rgba(31,47,87,.85);
-    padding:40px 40px 50px;
-    border-radius:20px;
-    text-align:center;
-    box-shadow:0 0 25px black;
-}
-
-/* ===== HEADINGS ===== */
-h1{
-    font-family:'Great Vibes', cursive;
-    font-size:72px;
-    font-weight:400;
-    color:white;
-    text-shadow:2px 2px 8px rgba(0,0,0,.6);
-}
- 
-h3{
-    font-size:26px;
-    font-weight:600;
-    margin-top:10px;
-    margin-bottom:10px;
-}
-
-.hashtag{
-    margin-top:30px;
-    font-size:16px;
-    color:rgba(255,255,255,.8);
-    font-style:italic;
-    letter-spacing:1px;
-    font-weight:normal;    
-}
-
-/* ===== INFO TEXT ===== */
-.info, .map-section, .hashtag, a, p, h3 {
-    font-family:'Poppins', sans-serif;
-}
-
-/* ===== BUTTONS ===== */
-a{
-    display:inline-block;
-    background:white;
-    color:#0039A6;
-    padding:15px 30px;
-    border-radius:10px;
-    font-size:22px;
-    font-weight:bold;
-    text-decoration:none;
-    margin:10px;
-    transition:.3s;
-}
-
-a:hover{
-    background:#d8e8ff;
-    transform:scale(1.05);
-}
-
-/* ===== FACEBOOK ICON ===== */
-.facebook{
-    font-size:30px;
-    margin-right:10px;
-}
-
-.map-section {
-    margin-top: 40px;
-    text-align: center;
-}
-
-.map-section h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.map-section p {
-    font-size: 16px;
-    margin-bottom: 15px;
-    opacity: 0.9;
-}
-
-@media (max-width: 600px){
-    .button-row{
-        justify-content:center;
-        gap:8px;
-        flex-wrap:nowrap;
+    /* = PAGE = */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
+      color: white;
+      background-image: var(--bg-image);
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
     }
 
-    .btn{
-        width:36px;   /* 15% smaller target */
-        height:36px;
-        border-radius:10px;
-        background:#5a5a5a;
+    /* = BACKGROUND OVERLAY / PAGE SHELL = */
+    .overlay {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: var(--page-overlay);
     }
 
-    .btn i{
-        font-size:28px; /* BIGGER icons */
+    /* = CONTENT CARD = */
+    .content {
+      width: 90%;
+      max-width: 700px;
+      padding: 40px 40px 50px;
+      background: var(--card-bg);
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 0 25px black;
     }
-}
- 
-     
 
- @media (max-width: 600px){
-    h1{
-        font-size:52px;
-        line-height:1;
-        white-space:nowrap;
+    /* = IDENTITY = */
+    h1 {
+      font-family: "Great Vibes", cursive;
+      font-size: 72px;
+      font-weight: 400;
+      color: white;
+      text-shadow:
+        2px 2px 8px rgba(0,0,0,.6);
     }
-}
- 
-</style>
 
+    /* = CONTACT / SOCIAL ACTIONS = */
+    .button-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: nowrap;
+      gap: 10px;
+      margin-top: 30px;
+    }
+
+    /* = BASE BUTTON STYLE = */
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      padding: 15px 30px;
+      margin: 10px;
+      border-radius: 12px;
+      background: var(--button-bg);
+      color: #0039A6;
+      font-size: 22px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: .3s;
+    }
+
+    .btn i {
+      font-size: 34px;
+      line-height: 1;
+    }
+
+    /* = ACTION COLORS = */
+    .call i {
+      color: var(--call-color);
+    }
+
+    .text i {
+      color: var(--text-color);
+    }
+
+    .email i {
+      color: var(--email-color);
+    }
+
+    .fb i {
+      color: var(--facebook-color);
+    }
+
+    /* = BUTTON HOVER = */
+    .btn:hover {
+      background: var(--button-hover-bg);
+      transform: scale(1.05);
+      opacity: .9;
+    }
+
+    /* = LOCATION = */
+    .map-section {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .map-section h3 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    .map-section p {
+      margin-bottom: 15px;
+      font-size: 16px;
+      opacity: .9;
+    }
+
+    .map-section iframe {
+      width: 100%;
+      height: 250px;
+      border: 0;
+      border-radius: 15px;
+    }
+
+    /* = PERSONAL SIGNATURE = */
+    .hashtag {
+      margin-top: 30px;
+      font-size: 16px;
+      font-style: italic;
+      font-weight: normal;
+      letter-spacing: 1px;
+      color: rgba(255,255,255,.8);
+    }
+
+    /* = MOBILE = */
+    @media (max-width: 600px) {
+
+      h1 {
+        font-size: 52px;
+        line-height: 1;
+        white-space: nowrap;
+      }
+
+      .button-row {
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 8px;
+      }
+
+      .btn {
+        width: 36px;
+        height: 36px;
+        border-radius: 10px;
+        background: var(--button-bg);
+      }
+
+      .btn i {
+        font-size: 28px;
+      }
+    }
+
+  </style>
 </head>
 
 <body>
 
-<div class="overlay">
+  <div class="overlay">
 
-<div class="content">
-
-<h1>Sebastian Davila</h1>
-
-<div class="info">
-
-<div class="button-row">
-
-   <a href="tel:+12544502783" class="btn call">
-    <i class="fa-solid fa-phone"></i>
-</a>
-
-<a href="sms:+12544502783" class="btn text">
-    <i class="fa-solid fa-comment-sms"></i>
-</a>
-
-<a href="mailto:sdavila@killeenauto.com" class="btn email">
-    <i class="fa-solid fa-envelope"></i>
-</a>
-
-<a href="https://www.facebook.com/share/1DVJFEeLbL/?mibextid=wwXIfr" target="_blank" class="btn fb">
-    <i class="fa-brands fa-facebook-f"></i>
-</a>
-
-</div>
-    
+    <div class="content">
 
 
-</div>
-<div class="map-section">
+      <!-- = IDENTITY = -->
+      <h1>Sebastian Davila</h1>
 
-    <h3>Come See Me</h3>
+      <!-- = CONTACT / SOCIAL ACTIONS = -->
+      <div class="button-row">
 
-    <p>3221 E Central Texas Expressway, Killeen, TX 76543</p>
+        <a
+          href="tel:+12544502783"
+          class="btn call"
+          aria-label="Call Sebastian">
 
-    <iframe
-        src="https://www.google.com/maps?q=3221%20E%20Central%20Texas%20Expressway%20Killeen%20TX%2076543&output=embed"
-        width="100%"
-        height="250"
-        style="border:0; border-radius:15px;"
-        allowfullscreen=""
-        loading="lazy">
-    </iframe>
+          <i
+            class="fa-solid fa-phone"
+            aria-hidden="true">
+          </i>
 
-</div>
+        </a>
 
-<h2 class="hashtag">#ComeSeeSebasss</h2>
 
-</div>
- 
-</div>
-</div>
+        <a
+          href="sms:+12544502783"
+          class="btn text"
+          aria-label="Text Sebastian">
 
-</div>
+          <i
+            class="fa-solid fa-comment-sms"
+            aria-hidden="true">
+          </i>
+
+        </a>
+
+
+        <a
+          href="mailto:sdavila@killeenauto.com"
+          class="btn email"
+          aria-label="Email Sebastian">
+
+          <i
+            class="fa-solid fa-envelope"
+            aria-hidden="true">
+          </i>
+
+        </a>
+
+
+        <a
+          href="https://urldefense.com/v3/__https://www.facebook.com/share/1DVJFEeLbL/?mibextid=wwXIfr__;!!BrVsjWms-IJ2!boVXmo7LiuSbe4UPRYItJ5fuAfCMNQZhtcqJzEPEO6M5xR17lsAzfDrt6JKNQyMRQ1MBvCnEqfVEmlQrTJZeqj0k2w$ "
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn fb"
+          aria-label="Visit Sebastian on Facebook">
+
+          <i
+            class="fa-brands fa-facebook-f"
+            aria-hidden="true">
+          </i>
+
+        </a>
+
+      </div>
+
+
+      <!-- = LOCATION = -->
+      <div class="map-section">
+
+        <h3>Come See Me</h3>
+
+        <p>
+          3221 E Central Texas Expressway, Killeen, TX 76543
+        </p>
+
+        <iframe
+          src="https://urldefense.com/v3/__https://www.google.com/maps?q=3221*20E*20Central*20Texas*20Expressway*20Killeen*20TX*2076543&output=embed__;JSUlJSUlJQ!!BrVsjWms-IJ2!boVXmo7LiuSbe4UPRYItJ5fuAfCMNQZhtcqJzEPEO6M5xR17lsAzfDrt6JKNQyMRQ1MBvCnEqfVEmlQrTJarbQE2Wg$ "
+          allowfullscreen=""
+          loading="lazy"
+          title="Volkswagen dealership location">
+        </iframe>
+
+      </div>
+
+
+      <!-- = PERSONAL SIGNATURE = -->
+      <h2 class="hashtag">#ComeSeeSebasss</h2>
+
+
+    </div>
+
+  </div>
 
 </body>
+
 </html>
